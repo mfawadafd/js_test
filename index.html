@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #bodys{
+        height: 100vh;
+        width: 100%;
+        background-color: aqua;
+    }
+    </style>
+</head>
+<body id="show" onclick="thisTime()">
+    <h1>Hello everyone</h1>
+  
+</body>
+<script>
+    // document.onclick=function show(e){
+    //     let currentTime = new Date()
+    //     let hours = currentTime.getHours()
+    //     let minutes = currentTime.getMinutes()
+    //     let second = currentTime.getSeconds()
+    //     document.getElementById("show").innerHTML = "Page x = " + e.pageX + "| page y =" + e.pageY + "| Time = "+ hours +":"
+    //     + minutes + ":"+ second
+    // }
+///////////////////////////////////////////////////////////////////////////////////
+
+// document.onclick=function thisTime(e){
+//     let now = new Date();
+//     let y = now.getHours();
+//     let z = now.getMinutes();
+//     let a = now.getSeconds();
+    
+//     document.getElementById("show").innerHTML = "Page X =" + e.pageX + ": Page Y = " + e.pageY + ":"+y + ":"+z+":"+a;
+// }
+
+
+
+// let x = document
+document.addEventListener("click", function xyz(e){
+    
+    console.log(e.x, e.y, new Date())
+    document.getElementById("show").innerHTML= e.x + ":" + e.y+ new Date();
+})
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////
+//    let = document.querySelector("h1");
+//    bodys.onclick = (time) =>{
+//      let x = now.getHoures();
+//      let y = now.getMinutes();
+//      let z = now.getSeconds();
+//     console.log(time , x ,y,z)
+//     document.getElementById("bodys").innerHTML = time.timeStamp
+//    }
+</script>
+</html>
